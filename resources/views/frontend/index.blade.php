@@ -1,0 +1,673 @@
+@extends('components.main')
+
+@section('content')
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden">
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="{{ asset('asset/videos/8997516-hd_1920_1080_30fps.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20 z-10"></div>
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 flex items-center z-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-xl">
+                    <h5 class="text-orange-400 font-semibold mb-4">PREMIUM PHOTOGRAPHY SERVICES</h5>
+                    <h1 class="text-4xl md:text-6xl text-white font-bold mb-6">Capturing Your <br><span
+                            class="text-pink-500">Beautiful Moments</span></h1>
+                    <p class="text-gray-200 text-lg mb-8">We specialize in wedding photography, portraits, and events. Let
+                        us make your special moments last forever.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#"
+                            class="bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-lg transition-colors">View
+                            Portfolio</a>
+                        <a href="#"
+                            class="bg-transparent border-2 border-white text-white font-medium px-6 py-3 rounded-lg hover:bg-white hover:text-orange-500 transition-all">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h5 class="text-orange-500 font-medium mb-2">WHAT WE OFFER</h5>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our Photography Services</h2>
+                <div class="w-24 h-1 bg-pink-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+                    <img src="/api/placeholder/600/400" alt="Wedding Photography" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="material-icons text-pink-500 text-3xl mb-3">favorite</span>
+                        <h3 class="text-xl font-bold mb-2">Wedding Photography</h3>
+                        <p class="text-gray-600 mb-4">From pre-wedding shoots to reception coverage, we ensure every moment
+                            of your special day is captured with artistry and attention to detail.</p>
+                        <a href="#"
+                            class="text-orange-500 font-medium flex items-center hover:text-orange-600 transition-colors">
+                            Learn More
+                            <span class="material-icons ml-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+                    <img src="/api/placeholder/600/400" alt="Portrait Photography" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="material-icons text-pink-500 text-3xl mb-3">photo_camera</span>
+                        <h3 class="text-xl font-bold mb-2">Portrait Photography</h3>
+                        <p class="text-gray-600 mb-4">Professional portrait sessions for individuals, couples, and families
+                            in our studio or at outdoor locations of your choice.</p>
+                        <a href="#"
+                            class="text-orange-500 font-medium flex items-center hover:text-orange-600 transition-colors">
+                            Learn More
+                            <span class="material-icons ml-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+                    <img src="/api/placeholder/600/400" alt="Event Photography" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="material-icons text-pink-500 text-3xl mb-3">celebration</span>
+                        <h3 class="text-xl font-bold mb-2">Event Photography</h3>
+                        <p class="text-gray-600 mb-4">Corporate events, birthday parties, anniversaries, and more - we
+                            document your gatherings with a professional approach.</p>
+                        <a href="#"
+                            class="text-orange-500 font-medium flex items-center hover:text-orange-600 transition-colors">
+                            Learn More
+                            <span class="material-icons ml-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 border border-orange-500 text-orange-500 font-medium rounded-lg hover:bg-orange-500 hover:text-white transition-colors">
+                    View All Services
+                    <span class="material-icons ml-2">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h5 class="text-orange-500 font-medium mb-2">OUR WORK</h5>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Featured Photography</h2>
+                <div class="w-24 h-1 bg-pink-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 bg-orange-500 text-white font-medium rounded-full">All</button>
+                <button
+                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Weddings</button>
+                <button
+                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Pre-Wedding</button>
+                <button
+                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Portraits</button>
+                <button
+                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Royal Wedding</h4>
+                        <p class="text-gray-300 text-sm">Wedding Photography</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Beach Engagement</h4>
+                        <p class="text-gray-300 text-sm">Pre-Wedding Shoot</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Corporate Event</h4>
+                        <p class="text-gray-300 text-sm">Event Photography</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Family Portrait</h4>
+                        <p class="text-gray-300 text-sm">Studio Photography</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Traditional Ceremony</h4>
+                        <p class="text-gray-300 text-sm">Wedding Photography</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Mountain Pre-Wedding</h4>
+                        <p class="text-gray-300 text-sm">Pre-Wedding Shoot</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Birthday Celebration</h4>
+                        <p class="text-gray-300 text-sm">Event Photography</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h4 class="text-white font-medium">Professional Headshot</h4>
+                        <p class="text-gray-300 text-sm">Portrait Photography</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors">
+                    View Full Gallery
+                    <span class="material-icons ml-2">photo_library</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h5 class="text-orange-400 font-medium mb-2">HAPPY CLIENTS</h5>
+                <h2 class="text-3xl md:text-4xl font-bold">What People Say</h2>
+                <div class="w-24 h-1 bg-pink-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="text-orange-400 mb-4">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"Sharma Ji and his team captured our wedding day beautifully. The
+                        photos exceeded our expectations and truly reflected the emotions of our special day. Highly
+                        recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-600 mr-4"></div>
+                        <div>
+                            <h4 class="font-medium">Priya & Rahul</h4>
+                            <p class="text-gray-400 text-sm">Wedding Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="text-orange-400 mb-4">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"The pre-wedding photoshoot was amazing! They found the perfect
+                        locations and made us feel comfortable in front of the camera. The results were stunning and we
+                        cherish them."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-600 mr-4"></div>
+                        <div>
+                            <h4 class="font-medium">Ananya & Vikas</h4>
+                            <p class="text-gray-400 text-sm">Pre-Wedding Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="text-orange-400 mb-4">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"We hired Sharma Ji Photography for our company event and were
+                        impressed by their professionalism and attention to detail. They captured the essence of our
+                        corporate culture perfectly."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-600 mr-4"></div>
+                        <div>
+                            <h4 class="font-medium">Ajay Sharma</h4>
+                            <p class="text-gray-400 text-sm">Corporate Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-pink-600">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+                <!-- Stat 1 -->
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+                    <p class="text-pink-200">Weddings Shot</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">1200+</div>
+                    <p class="text-pink-200">Happy Clients</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">15+</div>
+                    <p class="text-pink-200">Years Experience</p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">50+</div>
+                    <p class="text-pink-200">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h5 class="text-orange-500 font-medium mb-2">OUR PACKAGES</h5>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Photography Packages</h2>
+                <div class="w-24 h-1 bg-pink-500 mx-auto mt-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Choose from our carefully crafted packages designed to meet
+                    your specific needs. Custom packages also available upon request.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-orange-500 text-white py-6 text-center">
+                        <h3 class="text-2xl font-bold">Basic Package</h3>
+                        <p class="text-orange-100">Perfect for Small Events</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-gray-800">₹15,000</span>
+                            <span class="text-gray-600">/event</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                4 Hours Coverage
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                1 Photographer
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                100 Digital Photos
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Basic Editing
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Online Gallery
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="block text-center bg-orange-500 text-white font-medium py-3 rounded-lg hover:bg-orange-600 transition-colors">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform md:-translate-y-6">
+                    <div class="bg-pink-600 text-white py-8 text-center">
+                        <div class="inline-block px-3 py-1 bg-white text-pink-600 text-xs font-bold rounded-full mb-2">MOST
+                            POPULAR</div>
+                        <h3 class="text-2xl font-bold">Premium Package</h3>
+                        <p class="text-pink-100">Ideal for Weddings</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-gray-800">₹45,000</span>
+                            <span class="text-gray-600">/event</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Full Day Coverage (12 Hours)
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                2 Photographers
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                500+ Digital Photos
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Advanced Editing
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Online Gallery
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Photo Album (20 Pages)
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Highlight Video (5 Minutes)
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="block text-center bg-pink-600 text-white font-medium py-3 rounded-lg hover:bg-pink-700 transition-colors">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-orange-500 text-white py-6 text-center">
+                        <h3 class="text-2xl font-bold">Luxury Package</h3>
+                        <p class="text-orange-100">For Complete Experience</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-gray-800">₹75,000</span>
+                            <span class="text-gray-600">/event</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Pre-Wedding + Wedding (2 Days)
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                3 Photographers + 1 Videographer
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                1000+ Digital Photos
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Premium Editing
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Online Gallery
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Deluxe Photo Album (40 Pages)
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-icons text-green-500 mr-2">check_circle</span>
+                                Full Wedding Film (30+ Minutes)
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="block text-center bg-orange-500 text-white font-medium py-3 rounded-lg hover:bg-orange-600 transition-colors">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col md:flex-row gap-12">
+
+                <!-- Contact Form -->
+                <div class="w-full md:w-1/2">
+                    <h5 class="text-orange-500 font-semibold text-sm uppercase mb-2 tracking-wide">Get in Touch</h5>
+                    <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Contact Us</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Have questions or ready to book your photography session? Fill out the form below and we'll get back
+                        to you within 24 hours.
+                    </p>
+
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium">Your Name</label>
+                                <input type="text" placeholder="John Doe"
+                                    class="w-full px-5 py-3 border border-gray-300 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium">Your Email</label>
+                                <input type="email" placeholder="you@example.com"
+                                    class="w-full px-5 py-3 border border-gray-300 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Subject</label>
+                            <input type="text" placeholder="Booking inquiry"
+                                class="w-full px-5 py-3 border border-gray-300 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Your Message</label>
+                            <textarea rows="5" placeholder="Type your message here..."
+                                class="w-full px-5 py-3 border border-gray-300 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="inline-flex items-center bg-orange-500 text-white font-semibold px-6 py-3 rounded-2xl hover:bg-orange-600 transition-all shadow-lg">
+                            Send Message
+                            <span class="material-icons ml-2 text-base">send</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="w-full md:w-1/2">
+                    <div class="overflow-hidden rounded-3xl shadow-lg mb-8 h-64 md:h-96">
+                        <img src="/api/placeholder/800/600" alt="Studio Location"
+                            class="w-full h-full object-cover transition-transform hover:scale-105 duration-500">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Address -->
+                        <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
+                            <span class="material-icons text-pink-500 text-4xl">location_on</span>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Studio Address</h4>
+                                <p class="text-gray-600">123 Main Street<br>Cityville, Country 12345</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
+                            <span class="material-icons text-green-500 text-4xl">call</span>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Phone</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
+                            <span class="material-icons text-blue-500 text-4xl">email</span>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Email</h4>
+                                <p class="text-gray-600">info@yourstudio.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
+                            <span class="material-icons text-purple-500 text-4xl">schedule</span>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Business Hours</h4>
+                                <p class="text-gray-600">Mon - Fri: 9am - 6pm<br>Sat: 10am - 4pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed / Gallery Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="text-center mb-12">
+                <h5 class="text-orange-500 font-semibold text-sm uppercase tracking-wide">Our Work</h5>
+                <h2 class="text-4xl font-bold text-gray-800">Instagram Gallery</h2>
+                <p class="text-gray-600 mt-2">Follow us <a href="#"
+                        class="text-orange-500 hover:underline">@yourstudio</a> for more inspiration</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Example Image Items -->
+                <div class="overflow-hidden rounded-2xl shadow group relative">
+                    <img src="/api/placeholder/600/600" alt="Gallery image"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow group relative">
+                    <img src="/api/placeholder/600/600" alt="Gallery image"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow group relative">
+                    <img src="/api/placeholder/600/600" alt="Gallery image"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow group relative">
+                    <img src="/api/placeholder/600/600" alt="Gallery image"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h5 class="text-orange-500 font-semibold text-sm uppercase tracking-wide">Need Help?</h5>
+                <h2 class="text-4xl font-bold text-gray-800">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ Item -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">How do I book a session?</h3>
+                    <p class="text-gray-600">You can book directly using our contact form, or message us via Instagram.
+                        We’ll confirm your session and send further details by email.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">What should I wear for the shoot?</h3>
+                    <p class="text-gray-600">Wear something comfortable and complementary to your style. We also offer
+                        wardrobe guidance prior to your shoot!</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">How long before I get my photos?</h3>
+                    <p class="text-gray-600">We typically deliver edited photos within 5–7 business days via a private
+                        online gallery.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Can I reschedule my session?</h3>
+                    <p class="text-gray-600">Absolutely. Please let us know at least 48 hours in advance so we can arrange
+                        a new date that works for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
