@@ -11,7 +11,7 @@ class HomeController extends Controller
         return view('frontend.index');
     }
 
-    public function show()
+    public function contact()
     {
         return view('frontend.contact');
     }
@@ -34,6 +34,11 @@ class HomeController extends Controller
     public function about()
     {
         return view('frontend.about');
+    }
+
+    public function packages()
+    {
+        return view('frontend.packages');
     }
 
 }
