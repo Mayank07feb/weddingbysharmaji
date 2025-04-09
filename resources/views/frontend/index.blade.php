@@ -134,21 +134,26 @@
 
             <!-- Gallery Filter Buttons -->
             <div class="flex flex-wrap justify-center gap-4 mb-12">
-                <button class="px-6 py-2 bg-orange-500 text-white font-medium rounded-full">All</button>
+                <button class="filter-btn px-6 py-2 bg-orange-500 text-white font-medium rounded-full"
+                    data-filter="all">All</button>
                 <button
-                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Weddings</button>
+                    class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors"
+                    data-filter="wedding">Weddings</button>
                 <button
-                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Pre-Wedding</button>
+                    class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors"
+                    data-filter="prewedding">Pre-Wedding</button>
                 <button
-                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Portraits</button>
+                    class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors"
+                    data-filter="portrait">Portraits</button>
                 <button
-                    class="px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors">Events</button>
+                    class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 font-medium rounded-full hover:bg-orange-500 hover:text-white transition-colors"
+                    data-filter="event">Events</button>
             </div>
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Gallery Item 1 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <!-- Gallery Items -->
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="wedding">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -158,8 +163,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 2 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="prewedding">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -169,8 +173,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 3 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="event">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -180,8 +183,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 4 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="portrait">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -191,8 +193,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 5 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="wedding">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -202,8 +203,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 6 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="prewedding">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -213,8 +213,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 7 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="event">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -224,8 +223,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 8 -->
-                <div class="gallery-item relative overflow-hidden rounded-lg group">
+                <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="portrait">
                     <img src="/api/placeholder/600/600" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
@@ -245,6 +243,32 @@
             </div>
         </div>
     </section>
+
+    <!-- Filter Script -->
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Button active styling
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('bg-orange-500', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                button.classList.add('bg-orange-500', 'text-white');
+                button.classList.remove('bg-gray-200', 'text-gray-700');
+            });
+        });
+    </script>
+
 
     <!-- Testimonials Section -->
     <section class="py-20 bg-gray-900 text-white">
