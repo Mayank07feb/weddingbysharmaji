@@ -322,32 +322,25 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="py-16 bg-pink-600">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-                <!-- Stat 1 -->
+    <!-- Studio Stats -->
+    <section class="bg-white py-20">
+        <div class="container max-w-5xl mx-auto px-4 text-center">
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
                 <div>
-                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
-                    <p class="text-pink-200">Weddings Shot</p>
+                    <h3 class="text-5xl font-bold text-orange-500">250+</h3>
+                    <p class="text-gray-600 mt-2">Weddings Captured</p>
                 </div>
-
-                <!-- Stat 2 -->
                 <div>
-                    <div class="text-4xl md:text-5xl font-bold mb-2">1200+</div>
-                    <p class="text-pink-200">Happy Clients</p>
+                    <h3 class="text-5xl font-bold text-orange-500">1200+</h3>
+                    <p class="text-gray-600 mt-2">Happy Clients</p>
                 </div>
-
-                <!-- Stat 3 -->
                 <div>
-                    <div class="text-4xl md:text-5xl font-bold mb-2">15+</div>
-                    <p class="text-pink-200">Years Experience</p>
+                    <h3 class="text-5xl font-bold text-orange-500">15+</h3>
+                    <p class="text-gray-600 mt-2">Years of Experience</p>
                 </div>
-
-                <!-- Stat 4 -->
                 <div>
-                    <div class="text-4xl md:text-5xl font-bold mb-2">50+</div>
-                    <p class="text-pink-200">Awards Won</p>
+                    <h3 class="text-5xl font-bold text-orange-500">95%</h3>
+                    <p class="text-gray-600 mt-2">Referral Rate</p>
                 </div>
             </div>
         </div>
@@ -554,8 +547,10 @@
                 <!-- Contact Info -->
                 <div class="w-full md:w-1/2">
                     <div class="overflow-hidden rounded-3xl shadow-lg mb-8 h-64 md:h-96">
-                        <img src="/api/placeholder/800/600" alt="Studio Location"
-                            class="w-full h-full object-cover transition-transform hover:scale-105 duration-500">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.197263304557!2d-122.41941518468094!3d37.7749297797595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b7e3b2ef%3A0x3c2c561362da3b3e!2s123%20Main%20St%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1647769310000!5m2!1sen!2sus"
+                            class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">

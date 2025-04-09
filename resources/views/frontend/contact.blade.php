@@ -3,7 +3,7 @@
 @section('content')
     <!-- Banner Section -->
     <section class="relative h-[400px] bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: url('{{ asset('asset/images/banner.jpg') }}');">
+        style="background-image: url('{{ asset('asset/images/banner.jpg') }}');">
         <div class="bg-black/50 absolute inset-0"></div>
         <div class="relative z-10 text-center px-6">
             <h1 class="text-5xl font-bold mb-2">Contact Us</h1>
@@ -19,10 +19,10 @@
                 <!-- Contact Form -->
                 <div class="w-full md:w-1/2">
                     <h5 class="text-orange-500 font-semibold text-sm uppercase mb-2 tracking-wide">Get in Touch</h5>
-                    <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Let's Connect</h2>
+                    <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Contact Us</h2>
                     <p class="text-gray-600 mb-8 leading-relaxed">
-                        Have questions or ready to book your photography session? Fill out the form and we'll respond within
-                        24 hours.
+                        Have questions or ready to book your photography session? Fill out the form below and we'll get back
+                        to you within 24 hours.
                     </p>
 
                     <form class="space-y-6">
@@ -52,7 +52,7 @@
                         </div>
 
                         <button type="submit"
-                            class="inline-flex items-center bg-gray-700 text-white font-semibold px-6 py-3 rounded-2xl hover:bg-orange-600 transition-all shadow-lg">
+                            class="inline-flex items-center bg-orange-500 text-white font-semibold px-6 py-3 rounded-2xl hover:bg-orange-600 transition-all shadow-lg">
                             Send Message
                             <span class="material-icons ml-2 text-base">send</span>
                         </button>
@@ -69,6 +69,7 @@
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Address -->
                         <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
                             <span class="material-icons text-pink-500 text-4xl">location_on</span>
                             <div>
@@ -77,6 +78,7 @@
                             </div>
                         </div>
 
+                        <!-- Phone -->
                         <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
                             <span class="material-icons text-green-500 text-4xl">call</span>
                             <div>
@@ -85,6 +87,7 @@
                             </div>
                         </div>
 
+                        <!-- Email -->
                         <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
                             <span class="material-icons text-blue-500 text-4xl">email</span>
                             <div>
@@ -93,6 +96,7 @@
                             </div>
                         </div>
 
+                        <!-- Hours -->
                         <div class="flex items-start space-x-4 bg-gray-50 p-6 rounded-2xl shadow-sm">
                             <span class="material-icons text-purple-500 text-4xl">schedule</span>
                             <div>
@@ -106,4 +110,5 @@
             </div>
         </div>
     </section>
+    
 @endsection
