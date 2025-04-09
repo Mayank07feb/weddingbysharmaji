@@ -619,19 +619,19 @@
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <!-- Example Image Items -->
                 <div class="overflow-hidden rounded-2xl shadow group relative">
-                    <img src="{{asset('asset/images/about.jpg')}}" alt="Gallery image"
+                    <img src="{{ asset('asset/images/about.jpg') }}" alt="Gallery image"
                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 </div>
                 <div class="overflow-hidden rounded-2xl shadow group relative">
-                    <img src="{{asset('asset/images/about.jpg')}}" alt="Gallery image"
+                    <img src="{{ asset('asset/images/about.jpg') }}" alt="Gallery image"
                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 </div>
                 <div class="overflow-hidden rounded-2xl shadow group relative">
-                    <img src="{{asset('asset/images/about.jpg')}}" alt="Gallery image"
+                    <img src="{{ asset('asset/images/about.jpg') }}" alt="Gallery image"
                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 </div>
                 <div class="overflow-hidden rounded-2xl shadow group relative">
-                    <img src="{{asset('asset/images/about.jpg')}}" alt="Gallery image"
+                    <img src="{{ asset('asset/images/about.jpg') }}" alt="Gallery image"
                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 </div>
                 <!-- Add more as needed -->
@@ -641,39 +641,91 @@
 
     <!-- FAQ Section -->
     <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
+        <div class="container mx-auto px-4 max-w-6xl">
             <div class="text-center mb-12">
                 <h5 class="text-orange-500 font-semibold text-sm uppercase tracking-wide">Need Help?</h5>
                 <h2 class="text-4xl font-bold text-gray-800">Frequently Asked Questions</h2>
             </div>
 
-            <div class="space-y-6">
+            <div class="space-y-4">
                 <!-- FAQ Item -->
-                <div class="bg-gray-50 p-6 rounded-2xl shadow">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">How do I book a session?</h3>
-                    <p class="text-gray-600">You can book directly using our contact form, or message us via Instagram.
-                        We’ll confirm your session and send further details by email.</p>
+                <div class="bg-gray-50 p-6 rounded-2xl shadow cursor-pointer faq-item">
+                    <h3 class="text-lg font-semibold text-gray-800 flex justify-between items-center">
+                        <span>How do I book a session?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform transform" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </h3>
+                    <div class="mt-3 text-gray-600 faq-answer hidden">
+                        You can book directly using our contact form, or message us via Instagram. We’ll confirm your
+                        session and send further details by email.
+                    </div>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-2xl shadow">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">What should I wear for the shoot?</h3>
-                    <p class="text-gray-600">Wear something comfortable and complementary to your style. We also offer
-                        wardrobe guidance prior to your shoot!</p>
+                <div class="bg-gray-50 p-6 rounded-2xl shadow cursor-pointer faq-item">
+                    <h3 class="text-lg font-semibold text-gray-800 flex justify-between items-center">
+                        <span>What should I wear for the shoot?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform transform" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </h3>
+                    <div class="mt-3 text-gray-600 faq-answer hidden">
+                        Wear something comfortable and complementary to your style. We also offer wardrobe guidance prior to
+                        your shoot!
+                    </div>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-2xl shadow">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">How long before I get my photos?</h3>
-                    <p class="text-gray-600">We typically deliver edited photos within 5–7 business days via a private
-                        online gallery.</p>
+                <div class="bg-gray-50 p-6 rounded-2xl shadow cursor-pointer faq-item">
+                    <h3 class="text-lg font-semibold text-gray-800 flex justify-between items-center">
+                        <span>How long before I get my photos?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform transform" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </h3>
+                    <div class="mt-3 text-gray-600 faq-answer hidden">
+                        We typically deliver edited photos within 5–7 business days via a private online gallery.
+                    </div>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-2xl shadow">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Can I reschedule my session?</h3>
-                    <p class="text-gray-600">Absolutely. Please let us know at least 48 hours in advance so we can arrange
-                        a new date that works for you.</p>
+                <div class="bg-gray-50 p-6 rounded-2xl shadow cursor-pointer faq-item">
+                    <h3 class="text-lg font-semibold text-gray-800 flex justify-between items-center">
+                        <span>Can I reschedule my session?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform transform" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </h3>
+                    <div class="mt-3 text-gray-600 faq-answer hidden">
+                        Absolutely. Please let us know at least 48 hours in advance so we can arrange a new date that works
+                        for you.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Accordion Script -->
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('svg');
+
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    if (a !== answer) a.classList.add('hidden');
+                });
+                document.querySelectorAll('.faq-item svg').forEach(i => {
+                    if (i !== icon) i.classList.remove('rotate-180');
+                });
+
+                // Toggle current answer
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
 @endsection
