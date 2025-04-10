@@ -22,7 +22,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- Service 1 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/wedding.jpg" alt="Wedding Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-1.jpg')}}" alt="Wedding Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Wedding Photography</h3>
                 <p class="text-gray-600 mb-4">Timeless wedding day memories crafted with elegance.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -30,7 +30,7 @@
 
             <!-- Service 2 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/prewedding.jpg" alt="Pre-Wedding Shoots" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-2.jpg')}}" alt="Pre-Wedding Shoots" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Pre-Wedding Shoots</h3>
                 <p class="text-gray-600 mb-4">Creative and romantic sessions to tell your love story.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -38,7 +38,7 @@
 
             <!-- Service 3 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/portrait.jpg" alt="Portrait Sessions" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-3.jpg')}}" alt="Portrait Sessions" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Portrait Sessions</h3>
                 <p class="text-gray-600 mb-4">Professional and personal portrait photography.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -46,7 +46,7 @@
 
             <!-- Service 4 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/maternity.jpg" alt="Maternity Shoots" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-1.jpg')}}" alt="Maternity Shoots" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Maternity Shoots</h3>
                 <p class="text-gray-600 mb-4">Celebrate motherhood with graceful maternity portraits.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -54,7 +54,7 @@
 
             <!-- Service 5 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/baby.jpg" alt="Baby Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-2.jpg')}}" alt="Baby Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Baby & Kids Photography</h3>
                 <p class="text-gray-600 mb-4">Candid, adorable baby and children’s portraits.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -62,7 +62,7 @@
 
             <!-- Service 6 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/birthday.jpg" alt="Birthday Events" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-3.jpg')}}" alt="Birthday Events" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Birthday & Celebrations</h3>
                 <p class="text-gray-600 mb-4">Capture joy and laughter from your special day.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -70,7 +70,7 @@
 
             <!-- Service 7 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/events.jpg" alt="Event Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-1.jpg')}}" alt="Event Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Event Coverage</h3>
                 <p class="text-gray-600 mb-4">Corporate functions, cultural events & personal gatherings.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -78,7 +78,7 @@
 
             <!-- Service 8 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/products.jpg" alt="Product Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-2.jpg')}}" alt="Product Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Product Photography</h3>
                 <p class="text-gray-600 mb-4">High-quality product shots for eCommerce & branding.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -86,7 +86,7 @@
 
             <!-- Service 9 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/cinematic.jpg" alt="Cinematic Videography" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-3.jpg')}}" alt="Cinematic Videography" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Cinematic Videography</h3>
                 <p class="text-gray-600 mb-4">Highlight reels and full coverage with cinematic style.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>
@@ -94,7 +94,7 @@
 
             <!-- Service 10 -->
             <div class="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition text-center">
-                <img src="/images/services/drone.jpg" alt="Drone Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
+                <img src="{{asset('asset/images/services-1.jpg')}}" alt="Drone Photography" class="w-full h-52 object-cover rounded-2xl mb-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">Drone Photography</h3>
                 <p class="text-gray-600 mb-4">Aerial shots for weddings, venues, and real estate.</p>
                 <a href="/contact" class="text-orange-500 font-semibold hover:underline">Book Now</a>

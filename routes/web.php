@@ -16,3 +16,5 @@ Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 Route::get('/packages', [HomeController::class, 'packages'])->name('packages');
+
+Route::get('/booking', [HomeController::class, 'booking'])->name('booking');

@@ -64,7 +64,7 @@
 
             <!-- Right Side -->
             <div id="openBookNowModal" class="flex items-center justify-center md:justify-end mt-2 md:mt-0">
-                <a href="#booking"
+                <a href="{{ route('booking') }}"
                     class="bg-orange-500 text-white px-5 py-1.5 rounded-full text-sm font-medium hover:bg-orange-600 transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">
                     Book Now
                 </a>
@@ -132,16 +132,18 @@
                     class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></span>
             </a>
             <a href="{{ route('packages') }}"
-                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group hover:bg-orange-600">
+                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('packages') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 PACKAGES
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('packages') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}">
+                </span>
             </a>
             <a href="{{ route('services') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('services') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 SERVICES
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center {{ request()->routeIs('services') ? 'scale-x-100' : '' }}"></span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('services') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}">
+                </span>
             </a>
             <a href="{{ route('gallery') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('gallery') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
@@ -192,9 +194,13 @@
                 class="block px-4 py-3 transition-colors {{ request()->routeIs('events') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">EVENTS</a>
             <a href="#" class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">PRODUCTS</a>
             <a href="{{ route('packages') }}"
-                class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">PACKAGES</a>
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('packages') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">
+                PACKAGES
+            </a>
             <a href="{{ route('services') }}"
-                class="block px-4 py-3 transition-colors {{ request()->routeIs('services') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">SERVICES</a>
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('services') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">
+                SERVICES
+            </a>
             <a href="{{ route('gallery') }}"
                 class="block px-4 py-3 transition-colors {{ request()->routeIs('gallery') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">GALLERY</a>
             <a href="#" class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">BLOG</a>

@@ -24,7 +24,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Event 1 -->
                 <div class="bg-gray-50 rounded-3xl shadow-md hover:shadow-xl overflow-hidden">
-                    <img src="/images/events/wedding-event.jpg" alt="Wedding Event"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Wedding Event"
                         class="w-full h-60 object-cover rounded-t-3xl">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Elegant Wedding in Tuscany</h3>
@@ -36,7 +36,7 @@
 
                 <!-- Event 2 -->
                 <div class="bg-gray-50 rounded-3xl shadow-md hover:shadow-xl overflow-hidden">
-                    <img src="/images/events/birthday-event.jpg" alt="Birthday Party"
+                    <img src="{{asset('asset/images/services-2.jpg')}}" alt="Birthday Party"
                         class="w-full h-60 object-cover rounded-t-3xl">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Luxury 1st Birthday Bash</h3>
@@ -47,7 +47,7 @@
 
                 <!-- Event 3 -->
                 <div class="bg-gray-50 rounded-3xl shadow-md hover:shadow-xl overflow-hidden">
-                    <img src="/images/events/corporate-event.jpg" alt="Corporate Event"
+                    <img src="{{asset('asset/images/services-3.jpg')}}" alt="Corporate Event"
                         class="w-full h-60 object-cover rounded-t-3xl">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Annual Tech Summit</h3>
@@ -59,7 +59,7 @@
 
                 <!-- Event 4 -->
                 <div class="bg-gray-50 rounded-3xl shadow-md hover:shadow-xl overflow-hidden">
-                    <img src="/images/events/baby-shower.jpg" alt="Baby Shower"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Baby Shower"
                         class="w-full h-60 object-cover rounded-t-3xl">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Dreamy Baby Shower</h3>
@@ -71,7 +71,7 @@
 
                 <!-- Event 5 -->
                 <div class="bg-gray-50 rounded-3xl shadow-md hover:shadow-xl overflow-hidden">
-                    <img src="/images/events/engagement-party.jpg" alt="Engagement Party"
+                    <img src="{{asset('asset/images/services-2.jpg')}}" alt="Engagement Party"
                         class="w-full h-60 object-cover rounded-t-3xl">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Golden Hour Engagement</h3>
@@ -82,7 +82,7 @@
 
                 <!-- Event 6 -->
                 <div class="bg-gray-50 rounded-3xl shadow-md hover:shadow-xl overflow-hidden">
-                    <img src="/images/events/festival-event.jpg" alt="Festival Event"
+                    <img src="{{asset('asset/images/services-3.jpg')}}" alt="Festival Event"
                         class="w-full h-60 object-cover rounded-t-3xl">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Cultural Festival Coverage</h3>

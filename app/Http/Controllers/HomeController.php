@@ -41,4 +41,8 @@ class HomeController extends Controller
         return view('frontend.packages');
     }
 
+    public function booking()
+    {
+        return view('frontend.booking');
+    }
 }

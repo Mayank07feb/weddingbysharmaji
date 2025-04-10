@@ -22,42 +22,42 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Static Image Cards -->
             <div class="overflow-hidden rounded-3xl shadow-lg group relative">
-                <img src="/images/gallery/photo1.jpg" alt="Bridal Portrait" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="{{asset('asset/images/services-1.jpg')}}" alt="Bridal Portrait" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-semibold">
                     View Photo
                 </div>
             </div>
 
             <div class="overflow-hidden rounded-3xl shadow-lg group relative">
-                <img src="/images/gallery/photo2.jpg" alt="Outdoor Session" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="{{asset('asset/images/services-2.jpg')}}" alt="Outdoor Session" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-semibold">
                     View Photo
                 </div>
             </div>
 
             <div class="overflow-hidden rounded-3xl shadow-lg group relative">
-                <img src="/images/gallery/photo3.jpg" alt="Studio Glamour" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="{{asset('asset/images/services-3.jpg')}}" alt="Studio Glamour" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-semibold">
                     View Photo
                 </div>
             </div>
 
             <div class="overflow-hidden rounded-3xl shadow-lg group relative">
-                <img src="/images/gallery/photo4.jpg" alt="Maternity Shoot" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="{{asset('asset/images/about.jpg')}}" alt="Maternity Shoot" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-semibold">
                     View Photo
                 </div>
             </div>
 
             <div class="overflow-hidden rounded-3xl shadow-lg group relative">
-                <img src="/images/gallery/photo5.jpg" alt="Engagement Session" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="{{asset('asset/images/services-1.jpg')}}" alt="Engagement Session" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-semibold">
                     View Photo
                 </div>
             </div>
 
             <div class="overflow-hidden rounded-3xl shadow-lg group relative">
-                <img src="/images/gallery/photo6.jpg" alt="Urban Fashion" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="{{asset('asset/images/services-2.jpg')}}" alt="Urban Fashion" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-semibold">
                     View Photo
                 </div>
