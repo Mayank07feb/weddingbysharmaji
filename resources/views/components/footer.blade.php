@@ -45,12 +45,12 @@
                     Important Links</h4>
                 <ul class="space-y-2 text-gray-700 text-sm">
                     <li class="transition-transform hover:translate-x-1">
-                        <a href="#" class="hover:text-orange-500 transition-colors">
+                        <a href="{{route('about')}}" class="hover:text-orange-500 transition-colors">
                             <i class="fas fa-chevron-right text-xs text-orange-400 mr-1"></i> About Us
                         </a>
                     </li>
                     <li class="transition-transform hover:translate-x-1">
-                        <a href="#" class="hover:text-orange-500 transition-colors">
+                        <a href="{{route('contact')}}" class="hover:text-orange-500 transition-colors">
                             <i class="fas fa-chevron-right text-xs text-orange-400 mr-1"></i> Contact Us
                         </a>
                     </li>
@@ -70,8 +70,8 @@
                         </a>
                     </li>
                     <li class="transition-transform hover:translate-x-1">
-                        <a href="#" class="hover:text-orange-500 transition-colors">
-                            <i class="fas fa-chevron-right text-xs text-orange-400 mr-1"></i> Editor's Blog
+                        <a href="{{route('blogs')}}" class="hover:text-orange-500 transition-colors">
+                            <i class="fas fa-chevron-right text-xs text-orange-400 mr-1"></i>Blogs
                         </a>
                     </li>
                     <li class="transition-transform hover:translate-x-1">
@@ -94,7 +94,7 @@
                     Photography Favorites</h4>
                 <ul class="space-y-2 text-gray-700 text-sm">
                     <li class="transition-transform hover:translate-x-1">
-                        <a href="#" class="hover:text-orange-500 transition-colors">
+                        <a href="{{route('weddings')}}" class="hover:text-orange-500 transition-colors">
                             <i class="fas fa-chevron-right text-xs text-orange-400 mr-1"></i> Wedding Photographers
                         </a>
                     </li>
