@@ -66,7 +66,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
                 <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
-                    <img src="/api/placeholder/600/400" alt="Wedding Photography" class="w-full h-48 object-cover">
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Wedding Photography" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="material-icons text-pink-500 text-3xl mb-3">favorite</span>
                         <h3 class="text-xl font-bold mb-2">Wedding Photography</h3>
@@ -82,7 +82,7 @@
 
                 <!-- Service Card 2 -->
                 <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
-                    <img src="/api/placeholder/600/400" alt="Portrait Photography" class="w-full h-48 object-cover">
+                    <img src="{{asset('asset/images/services-2.jpg')}}" alt="Portrait Photography" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="material-icons text-pink-500 text-3xl mb-3">photo_camera</span>
                         <h3 class="text-xl font-bold mb-2">Portrait Photography</h3>
@@ -98,7 +98,7 @@
 
                 <!-- Service Card 3 -->
                 <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
-                    <img src="/api/placeholder/600/400" alt="Event Photography" class="w-full h-48 object-cover">
+                    <img src="{{asset('asset/images/services-3.jpg')}}" alt="Event Photography" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="material-icons text-pink-500 text-3xl mb-3">celebration</span>
                         <h3 class="text-xl font-bold mb-2">Event Photography</h3>
@@ -154,7 +154,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <!-- Gallery Items -->
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="wedding">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-2.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="prewedding">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-3.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -174,7 +174,7 @@
                 </div>
 
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="event">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -184,7 +184,7 @@
                 </div>
 
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="portrait">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -194,7 +194,7 @@
                 </div>
 
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="wedding">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -204,7 +204,7 @@
                 </div>
 
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="prewedding">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -214,7 +214,7 @@
                 </div>
 
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="event">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -224,7 +224,7 @@
                 </div>
 
                 <div class="gallery-item relative overflow-hidden rounded-lg group" data-category="portrait">
-                    <img src="/api/placeholder/600/600" alt="Gallery Image"
+                    <img src="{{asset('asset/images/services-1.jpg')}}" alt="Gallery Image"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="gallery-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 transition-opacity duration-300 flex flex-col justify-end p-4">
