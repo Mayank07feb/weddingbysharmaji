@@ -101,68 +101,77 @@
                 <span
                     class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center {{ request()->routeIs('home') ? 'scale-x-100' : '' }}"></span>
             </a>
-            <a href="#"
-                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group hover:bg-orange-600">
+
+            <a href="{{ route('portraits') }}"
+                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('portraits') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 PORTRAITS
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('portraits') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
             </a>
-            <a href="#"
-                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group hover:bg-orange-600">
+
+            <a href="{{ route('weddings') }}"
+                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('weddings') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 WEDDINGS
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('weddings') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
             </a>
-            <a href="#"
-                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group hover:bg-orange-600">
+
+            <a href="{{ route('pre-wedding') }}"
+                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('pre-wedding') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 PRE-WEDDING
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('pre-wedding') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
             </a>
+
             <a href="{{ route('events') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('events') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 EVENTS
                 <span
                     class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center {{ request()->routeIs('events') ? 'scale-x-100' : '' }}"></span>
             </a>
-            <a href="#"
-                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group hover:bg-orange-600">
+
+            <a href="{{ route('products') }}"
+                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('products') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 PRODUCTS
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('products') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
             </a>
+
             <a href="{{ route('packages') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('packages') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 PACKAGES
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('packages') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}">
-                </span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('packages') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
             </a>
+
             <a href="{{ route('services') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('services') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 SERVICES
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('services') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}">
-                </span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-transform origin-center {{ request()->routeIs('services') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
             </a>
+
             <a href="{{ route('gallery') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('gallery') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 GALLERY
                 <span
                     class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center {{ request()->routeIs('gallery') ? 'scale-x-100' : '' }}"></span>
             </a>
-            <a href="#"
-                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group hover:bg-orange-600">
+
+            <a href="{{ route('blogs') }}"
+                class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('blogs') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 BLOG
                 <span
-                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></span>
+                    class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center {{ request()->routeIs('blogs') ? 'scale-x-100' : '' }}"></span>
             </a>
+
             <a href="{{ route('about') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('about') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 ABOUT
                 <span
                     class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center {{ request()->routeIs('about') ? 'scale-x-100' : '' }}"></span>
             </a>
+
             <a href="{{ route('contact') }}"
                 class="px-3 lg:px-4 py-3 text-[15px] transition-colors relative group {{ request()->routeIs('contact') ? 'bg-pink-600' : 'hover:bg-orange-600' }}">
                 CONTACT
@@ -170,6 +179,7 @@
                     class="absolute bottom-0 left-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-center {{ request()->routeIs('contact') ? 'scale-x-100' : '' }}"></span>
             </a>
         </div>
+
 
         <!-- Mobile Navigation Button -->
         <div class="md:hidden flex items-center justify-between p-4">
@@ -185,27 +195,40 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu"
             class="md:hidden hidden bg-orange-500 w-full absolute left-0 shadow-lg rounded-b-lg border-t border-orange-400 overflow-hidden z-50">
+
             <a href="{{ route('home') }}"
                 class="block px-4 py-3 font-medium transition-colors {{ request()->routeIs('home') ? 'bg-pink-600' : 'hover:bg-pink-700' }}">HOME</a>
-            <a href="#" class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">PORTRAITS</a>
-            <a href="#" class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">WEDDINGS</a>
-            <a href="#" class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">PRE-WEDDING</a>
+
+            <a href="{{ route('portraits') }}"
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('portraits') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">PORTRAITS</a>
+
+            <a href="{{ route('weddings') }}"
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('weddings') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">WEDDINGS</a>
+
+            <a href="{{ route('pre-wedding') }}"
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('pre-wedding') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">PRE-WEDDING</a>
+
             <a href="{{ route('events') }}"
                 class="block px-4 py-3 transition-colors {{ request()->routeIs('events') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">EVENTS</a>
-            <a href="#" class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">PRODUCTS</a>
+
+            <a href="{{ route('products') }}"
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('products') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">PRODUCTS</a>
+
             <a href="{{ route('packages') }}"
-                class="block px-4 py-3 transition-colors {{ request()->routeIs('packages') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">
-                PACKAGES
-            </a>
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('packages') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">PACKAGES</a>
+
             <a href="{{ route('services') }}"
-                class="block px-4 py-3 transition-colors {{ request()->routeIs('services') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">
-                SERVICES
-            </a>
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('services') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">SERVICES</a>
+
             <a href="{{ route('gallery') }}"
                 class="block px-4 py-3 transition-colors {{ request()->routeIs('gallery') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">GALLERY</a>
-            <a href="#" class="block px-4 py-3 hover:bg-orange-600 border-t border-orange-400">BLOG</a>
+
+            <a href="{{ route('blogs') }}"
+                class="block px-4 py-3 transition-colors {{ request()->routeIs('blogs') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">BLOG</a>
+
             <a href="{{ route('about') }}"
                 class="block px-4 py-3 transition-colors {{ request()->routeIs('about') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">ABOUT</a>
+
             <a href="{{ route('contact') }}"
                 class="block px-4 py-3 transition-colors {{ request()->routeIs('contact') ? 'bg-pink-600' : 'hover:bg-orange-600' }} border-t border-orange-400">CONTACT</a>
 

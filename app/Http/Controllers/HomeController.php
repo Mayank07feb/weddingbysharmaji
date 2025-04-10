@@ -45,4 +45,29 @@ class HomeController extends Controller
     {
         return view('frontend.booking');
     }
+
+    public function blogs()
+    {
+        return view('frontend.blogs');
+    }
+
+    public function weddings()
+    {
+        return view('frontend.weddings');
+    }
+
+    public function preWedding()
+    {
+        return view('frontend.pre-wedding');
+    }
+
+    public function portraits()
+    {
+        return view('frontend.portraits');
+    }
+
+    public function products()
+    {
+        return view('frontend.products');
+    }
 }
