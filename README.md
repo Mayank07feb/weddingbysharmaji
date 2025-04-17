@@ -2,6 +2,8 @@
 
 **WeddingBySharmaji** is a modern web application designed to simplify wedding planning and sharing. From managing event details to creating personalized photo galleries, RSVP systems, and more — WeddingBySharmaji provides everything you need to make your wedding a beautiful and memorable experience.
 
+### Developed by Mayank Sharma
+
 ### Features
 
 - Customizable wedding website templates
